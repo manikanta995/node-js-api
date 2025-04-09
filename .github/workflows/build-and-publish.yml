@@ -1,9 +1,9 @@
 name: Build and Publish Docker Image
 
 on:
-
-    release:
-        types: [published] # or your desired branch
+  push:
+    branches:
+      - main  # or your desired branch
 
 jobs:
   build-and-push:
